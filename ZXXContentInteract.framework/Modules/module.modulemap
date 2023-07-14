@@ -1,0 +1,6 @@
+framework module ZXXContentInteract {
+  umbrella header "ZXXContentInteract.h"
+
+  export *
+  module * { export * }
+}
