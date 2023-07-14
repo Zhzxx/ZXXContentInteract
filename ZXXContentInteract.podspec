@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ZXXContentInteract"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "ZXXContentInteract的一个简单示范工程."
 
   s.description  = <<-DESC
@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
     core.dependency 'MBProgressHUD', '~>1.2.0'
     core.dependency 'Toast', '~>4.0.0'
 
-    core.vendored_frameworks = "ZXXContentInteract.framework" 
+    core.vendored_frameworks = "ZXXContentInteract.xcframework" 
     #core.public_header_files = "ZXXContentInteract.framework/Headers/*.h"
     core.resource_bundles = {
       "#{s.name}" => ["ZXXContentInteractBundle/*.{jpg,png,xib,strings,plist,bundle}"]
