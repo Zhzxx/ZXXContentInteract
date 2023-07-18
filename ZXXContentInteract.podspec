@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ZXXContentInteract"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "ZXXContentInteract的一个简单示范工程."
 
   s.description  = <<-DESC

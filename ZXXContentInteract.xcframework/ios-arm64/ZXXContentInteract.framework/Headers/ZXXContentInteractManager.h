@@ -15,6 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 @class ZXXResourceDetail;
 @class ZXXStudyItem;
 
+typedef enum : NSUInteger {
+    ZXXEnvPreproduction,
+    ZXXEnvEduproduction,
+} ZXXEnv;
+
 @interface ZXXContentInteractManager : NSObject
 
 typedef void(^ZXXCompletionBlk)(id _Nullable resData, NSError * _Nullable error);
@@ -35,8 +40,17 @@ typedef void(^ZXXCompletionBlk)(id _Nullable resData, NSError * _Nullable error)
 /// 登出
 - (void)logout;
 
-/// 可选
-- (void)setDominaIfneed:(NSString *)domain;
+/** 设置环境
+@param env 环境枚举 ZXXEnvPreproduction预生产环境，ZXXEnvEduproduction百度环境
+*/
+- (void)setEnvironment:(ZXXEnv)env;
+
+/** 设置环境
+@param env 环境枚举 ZXXEnvPreproduction预生产环境，ZXXEnvEduproduction百度环境
+@param domain 域名，可以不填为nil
+*/
+- (void)setEnvironment:(ZXXEnv)env domain:(NSString *)domain;
+
 
 #pragma mark - 点赞
 /** 单个资源获取点赞状态
