@@ -9,6 +9,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface ZXXAppraiseMultiItem : NSObject
+
+@property (nonatomic, copy) NSString *resourceId;                 ///< resourceId
+@property (nonatomic, copy) NSString *type;                     ///< 资源类型
+@property (nonatomic, assign) NSInteger count;         ///< 评价总数
+@property (nonatomic, assign) CGFloat averagePoint;     ///< 评价平均分
+
+- (instancetype)initWithSerDict:(NSDictionary *)dict;
+
+@end
+
 @interface ZXXAppraiseItem : NSObject
 
 @property (nonatomic, copy) NSString *resourceId;                 ///< resourceId
