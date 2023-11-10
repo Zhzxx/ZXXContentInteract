@@ -54,7 +54,7 @@ Pod::Spec.new do |s|
     
   end
 
-  spec.post_install do |installer|
+  s.post_install do |installer|
     # fix xcode 15 DT_TOOLCHAIN_DIR - remove after fix oficially - https://github.com/CocoaPods/CocoaPods/issues/12065
     installer.aggregate_targets.each do |target|
         target.xcconfigs.each do |variant, xcconfig|
