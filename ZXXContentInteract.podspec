@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ZXXContentInteract"
-  s.version      = "0.0.10"
+  s.version      = "0.0.11"
   s.summary      = "ZXXContentInteract的一个简单示范工程."
 
   s.description  = <<-DESC
@@ -38,8 +38,7 @@ Pod::Spec.new do |s|
   s.default_subspecs = 'Core'
 
   s.subspec 'Core' do |core|
-    #core.dependency 'SDWebImage'
-    core.dependency 'OpenSSL-Universal', '~> 1.0.2.10'
+    core.dependency 'OpenSSL-Universal', '~> 1.1.2200'
     core.dependency 'Masonry', '~>1.1.0'
     core.dependency 'AFNetworking', '~>4.0.1'
     core.dependency 'FMDB', '~>2.7.5'
