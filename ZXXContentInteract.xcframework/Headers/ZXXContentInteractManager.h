@@ -55,15 +55,21 @@ typedef void(^ZXXCompletionBlk)(id _Nullable resData, NSError * _Nullable error)
 #pragma mark - 点赞
 /** 单个资源获取点赞状态
  @param resourceId 需要获取点赞的资源id.
+ @param anonymous 是否使用匿名模式
  @param completion 回调 resData 为ZXXLikeStatuModel对象 当error有值时表示请求失败
  */
-- (void)likeStateWithResourceId:(NSString *)resourceId completion:(ZXXCompletionBlk)completion;
+- (void)likeStateWithResourceId:(NSString *)resourceId
+                      anonymous:(BOOL)anonymous
+                     completion:(ZXXCompletionBlk)completion;
 
-/** 批量获取资源的点赞数据，100个以内
+/** 批量获取资源的点赞数据(超过20个分批获取)
  @param resourceIds 资源id列表
+ @param anonymous 是否使用匿名模式
  @param completion 回调 resData 为NSArray<ZXXLikeStatuModel *>对象
  */
-- (void)listLikeState:(NSArray<NSString *> *)resourceIds completion:(ZXXCompletionBlk)completion;
+- (void)listLikeState:(NSArray<NSString *> *)resourceIds
+            anonymous:(BOOL)anonymous
+           completion:(ZXXCompletionBlk)completion;
 
 /** 为资源点赞
  @param resourceId     资源id
@@ -166,12 +172,24 @@ typedef void(^ZXXCompletionBlk)(id _Nullable resData, NSError * _Nullable error)
 /** 获取评分
 @param resourceId 资源id
 @param type 资源类型
+@param anonymous 是否使用匿名模式
 @param completion 回调 resData 为ZXXAppraiseItem对象
 */
 - (void)getAppraiseDataWithResourceId:(NSString *)resourceId
                                  type:(NSString *)type
+                            anonymous:(BOOL)anonymous
                            completion:(ZXXCompletionBlk)completion;
 
+/** 批量获取评分
+@param resourceIds 资源ids
+@param type 资源类型
+@param anonymous 是否使用匿名模式
+@param completion 回调 resData 为ZXXAppraiseMultiItem对象
+*/
+- (void)batchAppraiseDataWithResourceId:(NSArray <NSString *>*)resourceIds
+                                   type:(NSString *)type
+                              anonymous:(BOOL)anonymous
+                             completion:(ZXXCompletionBlk)completion;
 
 /** 上报浏览记录
 @param item 资源
