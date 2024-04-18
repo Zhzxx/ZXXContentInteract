@@ -28,7 +28,7 @@ typedef void(^ZXXCompletionBlk)(id _Nullable resData, NSError * _Nullable error)
 
 /** 设置AppKey
 @param appKey 申请的appkey.
-@param appKey 申请的secretKey.
+@param secretKey 申请的secretKey.
 */
 - (void)setAppKey:(NSString *)appKey secretKey:(NSString *)secretKey;
 
@@ -110,7 +110,7 @@ typedef void(^ZXXCompletionBlk)(id _Nullable resData, NSError * _Nullable error)
  */
 - (void)favoriteFolderRename:(ZXXFavFolderItem *)item completion:(ZXXCompletionBlk)completion;
 
-/** 修改收藏夹
+/** 删除收藏夹
  @param item 收藏夹实体
  @param completion 状态
  */
@@ -133,13 +133,6 @@ typedef void(^ZXXCompletionBlk)(id _Nullable resData, NSError * _Nullable error)
  @param completion     回调 resData 为是否取消成功@(YES)/@(NO)
  */
 - (void)delFavoriteResources:(NSArray<ZXXResourceDetail *> *)items completion:(ZXXCompletionBlk)completion;
-
-/** 判断资源是否已经收藏
- @param resourceId      资源id
- @param type           资源类型
- @param completion     回调 resData 为是否已收藏@(YES)/@(NO)
- */
-- (void)hasBeenFavorited:(NSString *)resourceId type:(NSString *)type completion:(ZXXCompletionBlk)completion;
 
 /** 按收藏夹查询收藏列表（全量）
 @param folderId      收藏夹id
