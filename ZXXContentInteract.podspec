@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ZXXContentInteract"
-  s.version      = "0.0.18"
+  s.version      = "0.0.19"
   s.summary      = "ZXXContentInteract的一个简单示范工程."
 
   s.description  = <<-DESC
@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
     core.dependency 'AFNetworking', '~>4.0.1'
     core.dependency 'FMDB', '~>2.7.5'
     core.dependency 'MBProgressHUD', '~>1.2.0'
-    core.dependency 'Toast', '~>4.0.0'
+    #core.dependency 'Toast', '~>4.0.0'
 
     core.vendored_frameworks = "ZXXContentInteract.xcframework" 
     #core.public_header_files = "ZXXContentInteract.framework/Headers/*.h"

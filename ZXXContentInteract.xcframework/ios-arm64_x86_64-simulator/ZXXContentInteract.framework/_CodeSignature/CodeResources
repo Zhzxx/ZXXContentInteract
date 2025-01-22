@@ -8,6 +8,14 @@
 		<data>
 		2/6Cuf/+ZMU8DP/1iGQR6kUKHkE=
 		</data>
+		<key>FMDB_Privacy.bundle/Info.plist</key>
+		<data>
+		Ed1+kbqLmIOJ8OEEGuoB3ILll3g=
+		</data>
+		<key>FMDB_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		ucg9pita0v8d353x3NuGfxweQYU=
+		</data>
 		<key>Headers/ZXXAppraiseItem.h</key>
 		<data>
 		kLDaTxLTR/S5nA7OX0BFaSOw8XE=
@@ -72,6 +80,28 @@
 			<key>hash2</key>
 			<data>
 			0OEqDWCPQoDMCeJ8kgPKJ1UdjmLvtwjdWEKTkMPLnsk=
+			</data>
+		</dict>
+		<key>FMDB_Privacy.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ed1+kbqLmIOJ8OEEGuoB3ILll3g=
+			</data>
+			<key>hash2</key>
+			<data>
+			zvMlAiVTmj7n61NkcoLspmltcrPce8ORdaBZHtKqfyE=
+			</data>
+		</dict>
+		<key>FMDB_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ucg9pita0v8d353x3NuGfxweQYU=
+			</data>
+			<key>hash2</key>
+			<data>
+			Uh6274Qwdz5cAQ4YOP6d2PpdYre3bRzqjX2NqtyxROI=
 			</data>
 		</dict>
 		<key>Headers/ZXXAppraiseItem.h</key>
