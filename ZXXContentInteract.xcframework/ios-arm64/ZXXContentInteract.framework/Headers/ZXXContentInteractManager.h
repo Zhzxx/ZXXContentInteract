@@ -28,7 +28,7 @@ typedef void(^ZXXCompletionBlk)(id _Nullable resData, NSError * _Nullable error)
 
 /** 设置AppKey
 @param appKey 申请的appkey.
-@param secretKey 申请的secretKey.
+@param appKey 申请的secretKey.
 */
 - (void)setAppKey:(NSString *)appKey secretKey:(NSString *)secretKey;
 
